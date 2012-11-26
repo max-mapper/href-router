@@ -14,8 +14,8 @@
     var route = currentTarget.attr('href')
     if (!route) return true
     // Basic rules:
-    // * If the href ends with a bang (!) we're going to return the route name
-    // * Otherwise, we're going to change the page href
+    // * If the href ends with a bang (!) we're going to halt the click event and call the modalCallback
+    // * Otherwise, we're going to do nothing at let the click event continue on as it pleases
     if ( route && route.indexOf( '!' ) === ( route.length - 1 ) ) {
       route = route.replace('#/', '') // Trim off the #/ from the beginning of the route if it exists
       route = route.substr(0, route.lastIndexOf('!'))
