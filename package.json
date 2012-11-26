@@ -1,0 +1,9 @@
+{
+  "author": "Max Ogden",
+  "name": "href-router",
+  "description": "use hrefs ending with ! to trigger app events",
+  "version": "0.0.1",
+  "engines": {
+    "browser": true
+  }
+}
