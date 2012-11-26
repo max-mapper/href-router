@@ -2,7 +2,7 @@
 
 catch links that end with ! and emit js events. useful for lightweight app routing (uses a single global 'live' listener)
 
-requires zepto.js with the .live and .tap components loaded
+requires zepto.js with the .live and .tap components loaded. for mobile browsers you should use https://github.com/ftlabs/fastclick
 
 ## usage
 
