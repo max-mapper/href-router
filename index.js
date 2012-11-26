@@ -1,10 +1,9 @@
 (function() {
   
   function catchRoutes(modalCallback, scope) {
-    if (!scope) scope = ""
-    else scope = scope + " "
+    if (!scope) scope = "document"
 
-    $(scope + 'a').live('click', function(e) {
+    $(scope).on('click', 'a', function(e) {
       return handleRoute(e, modalCallback)
     })
   }
